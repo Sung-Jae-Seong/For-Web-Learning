@@ -8,11 +8,18 @@
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
+  <div id="content_table">
+    <div id="theme_buttons">
+    <input type="button" value="light" onclick="setLightMode()" style="margin:2px">
+    <input type="button" value="dark" onclick="setDarkMode()" style="margin:2px">
+  </div>
+    <ol>
+      <li><a href="1.html" class="sub_title_link">HTML</a></li>
+      <li><a href="2.html" class="sub_title_link">CSS</a></li>
+      <li><a href="3.html" class="sub_title_link">JavaScript</a></li>
+    </ol>
+
+    </div>
   <div id="article">
   <h2>CSS</h2>
   <p>
@@ -25,5 +32,7 @@
     <script src="disqus.js"></script>
     <!-- Tawk.to -->
     <script src="tawk.js"></script>
+      <!-- 외부 JavaScript 파일 참조 -->
+  <script src="theme.js"></script>
 </body>
 </html>

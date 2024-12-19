@@ -20,15 +20,27 @@ h1 {
 }
 
 #grid ol {
-  border-right:1px solid gray;
   width:100px;
   margin:0px;
+  margin-top: 5px;
+}
+
+#article {
+  border-left:1px solid gray;
+  padding-left: 4px;
 }
 
 #disqus_thread{
   clear: both;
   margin-top: 20px;
 }
+
+#theme_buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 
 @media(max-width:925px){
   #grid {
