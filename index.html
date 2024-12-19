@@ -3,31 +3,7 @@
 <head>
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
-  <style>
-    .sub_title_link{
-      color:blue;
-      font-weight: bold;
-    }
-    #grid {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      border-bottom: gray 1px solid;
-    }
-    h1 {
-      text-align: center;
-      margin: 10px;
-    }
-    ol {
-      border-right:1px solid gray;
-      width:100px;
-      margin:0px;
-      padding:20px;
-    }
-    #disqus_thread{
-      clear: both;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -48,28 +24,9 @@
 
   <!-- Disqus 댓글 섹션 (grid 바깥으로 이동됨) -->
   <div id="disqus_thread"></div>
-  <script>
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://web-study-github.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-  <!-- Tawk.to Script -->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/674918472480f5b4f5a56d64/1idqodmml';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
+  <script src="disqus.js"></script>
+  <!-- Tawk.to -->
+  <script src="tawk.js"></script>
 </body>
   
 </html>

@@ -1,0 +1,41 @@
+
+.sub_title_link{
+  color:blue;
+  font-weight: bold;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  border-bottom: gray 1px solid;
+  border-top:gray 1px solid;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 4px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+#grid ol {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0px;
+}
+
+#disqus_thread{
+  clear: both;
+  margin-top: 20px;
+}
+
+@media(max-width:925px){
+  #grid {
+    display:block;
+    border-top:none;
+  }
+  #grid ol {
+    border-right:none;
+  }
+}
