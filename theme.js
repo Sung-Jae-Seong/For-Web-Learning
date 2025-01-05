@@ -28,27 +28,24 @@ function setColor(target, color){
 }
 function setDarkLightToggle() {
     const button = document.querySelector('#dark_light_toggle');
-    const body_style = document.querySelector('body').style;
-    const alist = document.querySelectorAll('a');
 
-    if(button.value==="dark"){
-        //body_style.background = 'black';
-        //setColor(body_style.color, 'white');
+    if (button.value === "dark") {
         button.value = "light";
-        //setColor(alist, 'powderblue');
+        button.innerText = "light";
+        
         Body.setBackground('black');
         Body.setColor('white');
         Links.setColor('powderblue');
-    }
-    else{
-        body_style.background = 'white';
-        setColor(body_style.color, 'black');
+    } else {
         button.value = "dark";
-        setColor(alist, 'blue');
+        button.innerText = "dark";
+        
+        Body.setBackground('white');
+        Body.setColor('black');
+        Links.setColor('blue');
     }
-
-
 }
+
 
 function setLightMode() {
     document.querySelector('body').style.background = 'white';
